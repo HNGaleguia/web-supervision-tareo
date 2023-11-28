@@ -1,14 +1,16 @@
-import './App.css'
-import TareoUI from './ui/TareoUI'
+import React from 'react';
+import './App.css';
+import TareoUI from './ui/TareoUI';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-
   return (
-    <>
-     <h1>TAREO</h1>
-     <TareoUI/>
-    </>
-  )
+    <React.Fragment>
+      <Routes>
+        <Route path="/" element={<TareoUI />} />
+      </Routes>
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;
