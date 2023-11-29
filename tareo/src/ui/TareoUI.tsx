@@ -33,7 +33,7 @@ const TareoUI = () => {
                 if (resultResponse.isSuccess) {
                     const valueData = resultResponse.valueData as TareoListDto[];
                     setTareoData(valueData);
-                    console.log(valueData);
+                    // console.log(valueData);
                 }
             } catch (error) {
                 console.error('Error fetching data:', error);
